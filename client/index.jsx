@@ -12,10 +12,10 @@ class App extends React.Component {
     this.getAnalystRatings = this.getAnalystRatings.bind(this);
   }
 
-  getAnalystRatings () {
+  getAnalystRatings (stockTicker) {
     $.ajax({
       method: 'GET',
-      url: 'http://localhost:3000/analystRatings',
+      url: `http://localhost:3000/analystRatings/?ticker=${stockTicker}`,
       success: (data) => {
         this.setState(
           {analystRatings: data}

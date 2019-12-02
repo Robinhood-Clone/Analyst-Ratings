@@ -1,14 +1,14 @@
 const Sequelize = require('sequelize');
+const seedData = require('./seed.js')
 
 const sequelize = new Sequelize('analystRatings', 'root', 'plantlife', {
   host: 'localhost',
   dialect: 'mysql'
 })
-const seedData = require('./seed.js')
 
 const Rating = sequelize.define('rating', {
   id: {
-    type: Sequelize.NUMBER,
+    type: Sequelize.INTEGER,
     autoIncrement: true,
     primaryKey: true,
   },
@@ -18,25 +18,24 @@ const Rating = sequelize.define('rating', {
   companyName: {
     type: Sequelize.STRING
   },
-  ratingCountBuys: {
-    type: Sequelize.STRING
+  rating_cnt_buys: {
+    type: Sequelize.INTEGER
   },
-  ratingCountHolds: {
-    type: Sequelize.STRING
+  rating_cnt_holds: {
+    type: Sequelize.INTEGER
   },
-  ratingCountSells: {
-    type: Sequelize.STRING
+  rating_cnt_sells: {
+    type: Sequelize.INTEGER
   },
 }, {
   timestamps: false
 }
 );
 
-Rating.bulkCreate(seedData.sampleRatings).then((ratings) => {
-  console.log("All analyst ratings: ", JSON.stringify(ratings, null, 4))
-
-  return Rating.findAll().then((ratings) => {
-    console.log("All analyst ratings: ", JSON.stringify(ratings, null, 4))
+Rating.sync({ force: true })
+  .then(() => {
+    Rating.bulkCreate(seedData.sampleRatings)
   })
 
-})
+
+module.exports.Rating = Rating;
