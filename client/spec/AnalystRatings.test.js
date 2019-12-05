@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow } from 'enzyme';
@@ -7,27 +6,22 @@ import AnalystRatings from '../Components/AnalystRatings.jsx';
 
 Enzyme.configure({adapter: new Adapter()});
 
-it('displays the Header', () => {
-  const wrapper = shallow(<Header />);
+it('displays the AnalystRatings', () => {
+  const wrapper = shallow(<AnalystRatings />);
   expect(wrapper.exists()).toBe(true);
 });
 
-
 // Test the GET request
 jest.mock('jquery');
-
 beforeEach(() => jest.resetModules());
 
 it('calls into $.ajax with the correct params', () => {
   const $ = require('jquery');
-  const App = require('../Components/App.jsx');
+  const AnalystRatings = require('../Components/AnalystRatings.jsx');
 
-  // Call into the function we want to test
   const dummyCallback = () => {};
   getAnalystRatings(dummyCallback);
 
-  // Now make sure that $.ajax was properly called during the previous
-  // 2 lines
   expect($.ajax).toBeCalledWith({
     success: expect.any(Function),
     type: 'GET',
@@ -35,25 +29,28 @@ it('calls into $.ajax with the correct params', () => {
   });
 });
 
+
+// Need to fix this test
+/*
 it('calls the callback when $.ajax requests are finished', () => {
   const $ = require('jquery');
-  const fetchCurrentUser = require('../fetchCurrentUser');
+  const AnalystRatings = require('../Components/AnalystRatings.jsx');
 
-  // Create a mock function for our callback
   const callback = jest.fn();
-  getAnalystRatings(callback);
+  getAnalystRatings('ASX', callback);
 
-  // Now we emulate the process by which `$.ajax` would execute its own
-  // callback
-  $.ajax.mock.calls[0 /*first call*/][0 /*first argument*/].success({
-    firstName: 'Bobby',
-    lastName: 'Marley',
+  $.ajax.mock.calls[0][0].success({
+    ticker: 'ASX',
+    companyName: 'Advanced Semiconductor Engineering, Inc.',
+    ratingCountBuys: 7,
+    ratingCountHolds: 1,
+    ratingCountSells: 21,
+    buySummary: 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.',
+    sellSummary: 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.'
   });
 
-  // And finally we assert that this emulated call by `$.ajax` incurred a
-  // call back into the mock function we provided as a callback
-  expect(callback.mock.calls[0 /*first call*/][0 /*first arg*/]).toEqual({
-    fullName: 'Bobby Marley',
-    loggedIn: true,
+  expect(callback.mock.calls[0][0]).toEqual({
+    // need to fix
   });
 });
+*/

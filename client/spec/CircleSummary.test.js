@@ -13,9 +13,9 @@ it('displays the circle summary', () => {
 });
 
 
-// Check that props are all there - this is not working right now
+// Check that props are all there - this is not working right now, need to fix
 let wrap = mount(<CircleSummary />);
-wrap.setProps({ name: 'Buy' });
+wrap.setProps({ percent: '30%' });
 wrap.setProps({ totalRatings: '40' });
 
 expect('percent' in wrap.props()).toEqual(true);
