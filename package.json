@@ -10,7 +10,8 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "build": "webpack -d --watch",
-    "db-setup": "node database/index.js"
+    "db-setup": "node database/index.js",
+    "test": "jest --watchAll --coverage"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -20,14 +21,20 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "request": "^2.88.0",
-    "sequelize": "^5.21.2",
+    "sequelize": "^5.21.2"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.12.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }

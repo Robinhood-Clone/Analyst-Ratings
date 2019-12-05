@@ -13,7 +13,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-react', '@babel/preset-env']   // preset env is for ES6
+            presets: ['@babel/preset-react', '@babel/preset-env']
           }
         }
       }
