@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 4000;
 const bodyParser = require('body-parser');
 const db = require('../database/index.js')
 
@@ -14,6 +14,7 @@ app.listen(port, ()=> {
 app.get('/analystRatings', (req, res) => {
 
   // Send GET request for a single user using query parameter STOCK TICKER
+  // example: http://localhost:3000/analystRatings/?ticker=ASX
   db.Rating.findAll({where: {ticker: req.query.ticker}})
   .then((data) => {
     res.status(200).send(data);

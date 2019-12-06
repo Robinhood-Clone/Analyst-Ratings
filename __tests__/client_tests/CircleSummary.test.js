@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import CircleSummary from '../Components/CircleSummary.jsx';
+import CircleSummary from '../../client/Components/CircleSummary.jsx';
 
 Enzyme.configure({adapter: new Adapter()});
 

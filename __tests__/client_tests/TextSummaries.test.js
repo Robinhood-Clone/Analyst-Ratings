@@ -2,19 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import Header from '../Components/Header.jsx';
+import TextSummaries from '../../client/Components/TextSummaries.jsx';
 
 Enzyme.configure({adapter: new Adapter()});
 
-// Tested with enzyme
-it('displays the Header', () => {
-  const wrapper = shallow(<Header />);
-  expect(wrapper.exists()).toBe(true);
-});
-
-// Tested without enzyme
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Header />, div);
+  ReactDOM.render(<TextSummaries />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+
+// I am still looking into how to appropriately tests that a list renders as expected, with the correct number of items for the TextSummaries and RatingBars components.

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import TextSummary from '../Components/TextSummary.jsx';
+import TextSummary from '../../client/Components/TextSummary.jsx';
 
 Enzyme.configure({ adapter: new Adapter() });
 

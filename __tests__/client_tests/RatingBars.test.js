@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import TextSummaries from '../Components/TextSummaries.jsx';
+import RatingBars from '../../client/Components/RatingBars.jsx';
 
 Enzyme.configure({adapter: new Adapter()});
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<TextSummaries />, div);
-  ReactDOM.unmountComponentAtNode(div);
+it('displays the Rating Bars', () => {
+  const wrapper = shallow(<RatingBars />);
+  expect(wrapper.exists()).toBe(true);
 });
 
 
