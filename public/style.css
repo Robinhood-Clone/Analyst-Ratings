@@ -1,0 +1,49 @@
+
+body {
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 19px;
+  display: block;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  line-height: 30px;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.circle {
+  background: lightgreen;
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+  border: 2px solid green;
+}
+
+.circle div {
+  position: relative;
+  left: 19px;
+  top: 19px;
+  width: 90px;
+  height: 40px;
+  line-height: 0px;
+  color: black;
+  text-align: center;
+}
+
+.circle-main-text {
+  font-size: 22px;
+}
+
+.text-summary {
+  border: 2px solid black;
+  padding: 10px;
+}
