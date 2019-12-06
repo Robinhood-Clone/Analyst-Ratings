@@ -11,13 +11,13 @@ const Textbox = styled.div`
   width: 175px;
 `;
 
-const TitleStyle = styled.div`
+const Title = styled.div`
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
 `;
 
-const InnerTextParentStyle = styled.div`
+const TextWrapper = styled.div`
   position: relative;
 `;
 
@@ -54,14 +54,14 @@ const ReadMoreLessButton = styled.div`
   cursor: pointer;
 `;
 
-const DataSourceStyle = styled.div`
+const DataSourceName = styled.div`
   font-size: 12px;
   color: rgb(213, 213, 216);
   padding-top: 15px;
   padding-bottom: 22px;
 `;
 
-const TextboxTailStyle = styled.div`
+const TextboxTail = styled.div`
   width: 0;
   height: 0;
   margin-left: 12px;
@@ -97,22 +97,22 @@ class TextSummary extends React.Component {
 
   renderView() {
     if (this.state.readOptionClickText === 'Read More') {
-      return (<InnerTextParentStyle>
+      return (<TextWrapper>
         <QuoteMark>"</QuoteMark>
         <MinimizedText>{`${this.props.summary}"`}</MinimizedText>
-      </InnerTextParentStyle>);
+      </TextWrapper>);
     } else if (this.state.readOptionClickText === 'Read Less') {
-      return (<InnerTextParentStyle>
+      return (<TextWrapper>
         <QuoteMark>"</QuoteMark>
         <MaximizedText>{`${this.props.summary}"`}</MaximizedText>
-      </InnerTextParentStyle>);
+      </TextWrapper>);
     }
   }
 
   render() {
 
     let color;
-    let darkRed = 'rgb(245, 85, 49)';
+    let darkRed = 'rgb(244, 85, 49)';
     let darkGreen = 'rgb(33, 206, 153)';
 
     if (this.props.buyPercent.substring(0, this.props.buyPercent.length - 1) < 50) {
@@ -121,16 +121,15 @@ class TextSummary extends React.Component {
       color = darkGreen;
     }
 
-
     return (
       <div>
         <Textbox>
-          <TitleStyle>{this.props.name}</TitleStyle>
+          <Title>{this.props.name}</Title>
           {this.renderView()}
           <ReadMoreLessButton onClick={this.onReadClick} color={color}>{this.state.readOptionClickText}</ReadMoreLessButton>
-          <DataSourceStyle>MorningStar</DataSourceStyle>
+          <DataSourceName>MorningStar</DataSourceName>
         </Textbox>
-        <TextboxTailStyle></TextboxTailStyle>
+        <TextboxTail></TextboxTail>
       </div>
     );
   }

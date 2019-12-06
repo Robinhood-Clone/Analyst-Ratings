@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const BarContainerStyle = styled.div`
+const BarContainer = styled.div`
   display: flex;
   align-items: center;
   flex-flow: row wrap;
@@ -10,7 +10,7 @@ const BarContainerStyle = styled.div`
   width: 460px;
 `;
 
-const BarSegmentSolidStyle = styled.div`
+const BarSegmentSolid = styled.div`
   display: flex;
   width: ${(props) => props.barWidth}px;
   border-top-left-radius: 3px;
@@ -19,7 +19,7 @@ const BarSegmentSolidStyle = styled.div`
   height: 6px;
 `;
 
-const BarSegmentGradientStyle = styled.div`
+const BarSegmentGradient = styled.div`
   display: flex;
   flex-grow: 1;
   border-top-right-radius: 3px;
@@ -28,12 +28,12 @@ const BarSegmentGradientStyle = styled.div`
   height: 6px;
 `;
 
-const TextStyle = styled.div`
+const LabelText = styled.div`
   font-weight: 500;
   width: 35px;
 `;
 
-const PercentTextStyle = styled.div`
+const PercentText = styled.div`
   font-weight: 500;
   margin-left: 3px;
   margin-right: 5px;
@@ -42,8 +42,8 @@ const PercentTextStyle = styled.div`
 const RatingBar = (props) => {
   let percentNum = props.percent.substring(0, props.percent.length - 1);
   let barWidth = percentNum / 100 * 460;
-  let darkRed = 'rgb(245, 85, 49)';
-  let lightRed = '#ffcccb';
+  let darkRed = 'rgb(244, 85, 49)';
+  let lightRed = 'rgb(255, 245, 243)';
   let darkGreen = 'rgb(33, 206, 153)';
   let lightGreen = 'rgb(230, 249, 243)';
   let gray = 'rgb(244, 244, 245)';
@@ -60,12 +60,12 @@ const RatingBar = (props) => {
   }
 
   return (
-    <BarContainerStyle>
-      <TextStyle>{props.name}</TextStyle>
-      <BarSegmentSolidStyle barWidth={barWidth} color={colors[0]}></BarSegmentSolidStyle>
-      <PercentTextStyle>{props.percent}</PercentTextStyle>
-      <BarSegmentGradientStyle color={colors[1]}></BarSegmentGradientStyle>
-    </BarContainerStyle>
+    <BarContainer>
+      <LabelText>{props.name}</LabelText>
+      <BarSegmentSolid barWidth={barWidth} color={colors[0]}></BarSegmentSolid>
+      <PercentText>{props.percent}</PercentText>
+      <BarSegmentGradient color={colors[1]}></BarSegmentGradient>
+    </BarContainer>
   );
 
 };
