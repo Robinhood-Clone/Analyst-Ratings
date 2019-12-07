@@ -6,7 +6,6 @@ import CircleSummary from '../../client/Components/CircleSummary.jsx';
 
 Enzyme.configure({adapter: new Adapter()});
 
-
 it('displays the circle summary', () => {
   const wrapper = shallow(<CircleSummary />);
   expect(wrapper.exists()).toBe(true);
@@ -15,8 +14,23 @@ it('displays the circle summary', () => {
 
 // Check that props are all there - this is not working right now, need to fix
 let wrap = mount(<CircleSummary />);
-wrap.setProps({ percent: '30%' });
-wrap.setProps({ totalRatings: '40' });
+wrap.setProps({ percent: '30%', totalRatings: 40 });
 
-expect('percent' in wrap.props()).toEqual(true);
-expect('totalRatings' in wrap.props()).toEqual(true);
+expect('30%' in wrap.props()).toEqual(true);
+expect('40' in wrap.props()).toEqual(true);
+
+const user = {
+  name: 'John Doe',
+  email: 'johndoe@gmail.com',
+  username: 'johndoe',
+  image: null
+};
+
+describe ('<CircleSummary />', () => {
+  it ('accepts user props', () => {
+    const wrapper = mount(<Profile user={user} />);
+    expect(wrapper.props().user).toEqual(user);
+  });
+
+
+});

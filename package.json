@@ -11,7 +11,8 @@
     "start": "nodemon server/index.js",
     "build": "webpack -d --watch",
     "db-setup": "node database/index.js",
-    "test": "jest --watchAll --coverage"
+    "test": "jest --watchAll --coverage",
+    "debug-tests": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "jest": {
     "coverageDirectory": "__tests__/coverage"

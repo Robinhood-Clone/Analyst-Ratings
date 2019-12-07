@@ -11,6 +11,13 @@ it('displays the AnalystRatings', () => {
   expect(wrapper.exists()).toBe(true);
 });
 
+it('calls componentDidMount', () => {
+  jest.spyOn(AnalystRatings.prototype, 'componentDidMount');
+  const wrapper = shallow(<AnalystRatings />);
+  expect(AnalystRatings.prototype.componentDidMount.mock.calls.length).toBe(1);
+});
+
+
 // Test the GET request
 jest.mock('jquery');
 beforeEach(() => jest.resetModules());
