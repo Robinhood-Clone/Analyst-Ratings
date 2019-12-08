@@ -38,7 +38,7 @@ class AnalystRatings extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentStockTicker: 'RRGB', // RRGB is green and ASX is red
+      currentStockTicker: 'AHPAW', // AHPAW is green and UVE is red
       details: {
         id: 0,
         ticker: 'ticker',

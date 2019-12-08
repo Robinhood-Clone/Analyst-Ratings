@@ -1,7 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import PricetagIcon from './PricetagIcon.jsx';
+
+const CircleContainer = styled.div`
+  display: flex;
+  width: 128px;
+`;
 
 const CircleStyle = styled.div`
+  position: relative;
   background: ${(props) => props.color};
   width: 128px;
   height: 128px;
@@ -31,14 +38,6 @@ const CircleMinorTextStyle = styled.div`
   color: ${(props) => props.color};
   text-align: center;
 `;
-const PriceTagIcon = styled.img`
-  position: relative;
-  src: ${(props) => props.src};
-  height: 15px;
-  width: 15px;
-  top: 66px;
-  left: 22px;
-`;
 
 const CircleSummary = (props) => {
   let colors;
@@ -54,13 +53,13 @@ const CircleSummary = (props) => {
   }
 
   return (
-    <div>
-      <PriceTagIcon src={colors[2]}></PriceTagIcon>
+    <CircleContainer>
+      <PricetagIcon color={colors[0]}></PricetagIcon>
       <CircleStyle color={colors[1]}>
         <CircleMainTextStyle color={colors[0]}>{props.percent}</CircleMainTextStyle>
         <CircleMinorTextStyle color={colors[0]}> of {props.totalRatings} ratings</CircleMinorTextStyle>
       </CircleStyle>
-    </div>
+    </CircleContainer>
   );
 
 };
