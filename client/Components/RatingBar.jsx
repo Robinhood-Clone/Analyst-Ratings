@@ -29,12 +29,12 @@ const BarSegmentGradient = styled.div`
 `;
 
 const LabelText = styled.div`
-  font-weight: 500;
+  font-weight: 700;
   width: 35px;
 `;
 
 const PercentText = styled.div`
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 3px;
   margin-right: 5px;
 `;

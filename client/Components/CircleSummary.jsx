@@ -25,7 +25,7 @@ const CircleMainTextStyle = styled.div`
   color: ${(props) => props.color};
   text-align: center;
   font-size: 21pt;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 const CircleMinorTextStyle = styled.div`
@@ -35,6 +35,7 @@ const CircleMinorTextStyle = styled.div`
   width: 90px;
   height: 40px;
   line-height: 0px;
+  font-weight: 600pt;
   color: ${(props) => props.color};
   text-align: center;
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const Textbox = styled.div`
   background: rgb(247, 247, 247);
@@ -13,7 +14,7 @@ const Textbox = styled.div`
 
 const Title = styled.div`
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 5px;
 `;
 
@@ -48,8 +49,9 @@ const QuoteMark = styled.div`
 
 const ReadMoreLessButton = styled.div`
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 800;
   color: ${(props) => props.color};
+  margin-top: 5px;
   margin: 0px;
   cursor: pointer;
 `;
@@ -104,7 +106,13 @@ class TextSummary extends React.Component {
     } else if (this.state.readOptionClickText === 'Read Less') {
       return (<TextWrapper>
         <QuoteMark>"</QuoteMark>
-        <MaximizedText>{`${this.props.summary}"`}</MaximizedText>
+        <ReactCSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+
+          <MaximizedText>{`${this.props.summary}"`}</MaximizedText>
+        </ReactCSSTransitionGroup>
       </TextWrapper>);
     }
   }
