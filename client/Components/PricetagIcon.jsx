@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Stylesvg = styled.svg`
   position: absolute;
   top: 132px;
-  left: 46px;
+  left: 50px;
   z-index: 1;
 `;
 

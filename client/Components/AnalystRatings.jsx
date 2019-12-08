@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "DINPro", -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 13px;
     font-weight: 500;
-    letter-spacing: 0.25px;
+    letter-spacing: 0px;
     line-height: 19px;
     display: block;
   }
@@ -56,7 +56,7 @@ class AnalystRatings extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentStockTicker: 'AHPAW', // AHPAW is green and UVE is red
+      currentStockTicker: 'UVE', // AHPAW is green and UVE is red
       details: {
         id: 0,
         ticker: 'ticker',

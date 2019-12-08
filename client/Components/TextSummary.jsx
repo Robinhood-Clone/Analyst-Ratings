@@ -49,7 +49,7 @@ const QuoteMark = styled.div`
 
 const ReadMoreLessButton = styled.div`
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 1000;
   color: ${(props) => props.color};
   margin-top: 5px;
   margin: 0px;
@@ -59,8 +59,8 @@ const ReadMoreLessButton = styled.div`
 const DataSourceName = styled.div`
   font-size: 12px;
   color: rgb(213, 213, 216);
-  padding-top: 15px;
-  padding-bottom: 22px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 `;
 
 const TextboxTail = styled.div`
@@ -71,7 +71,6 @@ const TextboxTail = styled.div`
   border-width: 0 15px 20px 24px;
   border-color: transparent transparent transparent rgb(247, 247, 247);
 `;
-
 
 class TextSummary extends React.Component {
 
@@ -106,13 +105,7 @@ class TextSummary extends React.Component {
     } else if (this.state.readOptionClickText === 'Read Less') {
       return (<TextWrapper>
         <QuoteMark>"</QuoteMark>
-        <ReactCSSTransitionGroup
-          transitionName="example"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}>
-
-          <MaximizedText>{`${this.props.summary}"`}</MaximizedText>
-        </ReactCSSTransitionGroup>
+        <MaximizedText>{`${this.props.summary}"`}</MaximizedText>
       </TextWrapper>);
     }
   }
