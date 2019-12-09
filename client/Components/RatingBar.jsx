@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import colors from './Colors.jsx';
 
 const BarContainer = styled.div`
   display: flex;
@@ -29,12 +30,12 @@ const BarSegmentGradient = styled.div`
 `;
 
 const LabelText = styled.div`
-  font-weight: 700;
+  font-weight: 500;
   width: 35px;
 `;
 
 const PercentText = styled.div`
-  font-weight: 600;
+  font-weight: 500;
   margin-left: 3px;
   margin-right: 5px;
 `;
@@ -42,29 +43,24 @@ const PercentText = styled.div`
 const RatingBar = (props) => {
   let percentNum = props.percent.substring(0, props.percent.length - 1);
   let barWidth = percentNum / 100 * 460;
-  let darkRed = 'rgb(244, 85, 49)';
-  let lightRed = 'rgb(255, 245, 243)';
-  let darkGreen = 'rgb(33, 206, 153)';
-  let lightGreen = 'rgb(230, 249, 243)';
-  let gray = 'rgb(244, 244, 245)';
 
-  let colors;
+  let colorsArr;
   if (props.name === 'Buy') {
     if (percentNum < 50) {
-      colors = [darkRed, lightRed];
+      colorsArr = [colors.darkRed, colors.lightRed];
     } else {
-      colors = [darkGreen, lightGreen];
+      colorsArr = [colors.darkGreen, colors.lightGreen];
     }
   } else {
-    colors = ['black', gray];
+    colorsArr = ['black', colors.gray];
   }
 
   return (
     <BarContainer>
       <LabelText>{props.name}</LabelText>
-      <BarSegmentSolid barWidth={barWidth} color={colors[0]}></BarSegmentSolid>
+      <BarSegmentSolid barWidth={barWidth} color={colorsArr[0]}></BarSegmentSolid>
       <PercentText>{props.percent}</PercentText>
-      <BarSegmentGradient color={colors[1]}></BarSegmentGradient>
+      <BarSegmentGradient color={colorsArr[1]}></BarSegmentGradient>
     </BarContainer>
   );
 

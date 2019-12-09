@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import colors from './Colors.jsx';
 
 const Textbox = styled.div`
   background: rgb(247, 247, 247);
@@ -14,7 +15,7 @@ const Textbox = styled.div`
 
 const Title = styled.div`
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 5px;
 `;
 
@@ -28,6 +29,7 @@ const MinimizedText = styled.div`
   line-height: 19px;
   overflow-y: hidden;
   margin-bottom: 0px;
+  font-family: "DinPro-Light";
 `;
 
 const MaximizedText = styled.div`
@@ -35,6 +37,7 @@ const MaximizedText = styled.div`
   min-height: 60px;
   line-height: 19px;
   margin-bottom: 0px;
+  font-family: "DinPro-Light";
 `;
 
 const QuoteMark = styled.div`
@@ -45,11 +48,12 @@ const QuoteMark = styled.div`
   height: 60px;
   line-height: 19px;
   margin-bottom: 0px;
+  font-family: "DinPro-Light";
 `;
 
 const ReadMoreLessButton = styled.div`
   font-size: 12px;
-  font-weight: 1000;
+  font-weight: 600;
   color: ${(props) => props.color};
   margin-top: 5px;
   margin: 0px;
@@ -113,13 +117,11 @@ class TextSummary extends React.Component {
   render() {
 
     let color;
-    let darkRed = 'rgb(244, 85, 49)';
-    let darkGreen = 'rgb(33, 206, 153)';
 
     if (this.props.buyPercent.substring(0, this.props.buyPercent.length - 1) < 50) {
-      color = darkRed;
+      color = colors.darkRed;
     } else {
-      color = darkGreen;
+      color = colors.darkGreen;
     }
 
     return (

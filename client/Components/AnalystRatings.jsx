@@ -4,37 +4,8 @@ import Header from './Header.jsx';
 import CircleSummary from './CircleSummary.jsx';
 import RatingBars from './RatingBars.jsx';
 import TextSummaries from './TextSummaries.jsx';
-import { createGlobalStyle } from 'styled-components';
+import GlobalStyle from './GlobalStyle.jsx';
 import styled from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    font-family: "DINPro", -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0px;
-    line-height: 19px;
-    display: block;
-  }
-  @font-face {
-    font-family: "DINPro";
-    src: url("./DINPro.ttf") format('truetype');
-  }
-
-  h2 {
-    font-size: 26px;
-    font-weight: 900;
-    letter-spacing: -0.14px;
-    line-height: 30px;
-    display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    border-bottom: 1px solid #f4f4f5;
-    padding-bottom: 16px;
-  }
-`;
 
 const OuterContainer = styled.div`
   display: flex;
@@ -56,7 +27,7 @@ class AnalystRatings extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentStockTicker: 'UVE', // AHPAW is green and UVE is red
+      currentStockTicker: 'AHPAW', // AHPAW is green and UVE is red
       details: {
         id: 0,
         ticker: 'ticker',
@@ -120,9 +91,3 @@ class AnalystRatings extends React.Component {
 }
 
 export default AnalystRatings;
-
-
-// // I made this to see what the circle should display (highest percent opinion) but upon looking through the website, actually it just shows the Buy percent always... I think the below is more interesting so left it for now
-// let percentArr = analystOpinionSummary.map((element) => element.percent);
-// let largestPercent = Math.max(...percentArr);
-// let opinionLargestPercent = analystOpinionSummary.find((element) => element.percent === largestPercent);

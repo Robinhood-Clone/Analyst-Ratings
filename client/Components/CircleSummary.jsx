@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PricetagIcon from './PricetagIcon.jsx';
+import colors from './Colors.jsx';
 
 const CircleContainer = styled.div`
   display: flex;
@@ -41,24 +42,20 @@ const CircleMinorTextStyle = styled.div`
 `;
 
 const CircleSummary = (props) => {
-  let colors;
-  let darkRed = 'rgb(244, 85, 49)';
-  let lightRed = 'rgb(255, 245, 243)';
-  let darkGreen = 'rgb(33, 206, 153)';
-  let lightGreen = 'rgb(230, 249, 243)';
+  let colorsArr;
 
   if (props.percent.substring(0, props.percent.length - 1) < 50) {
-    colors = [darkRed, lightRed, './label-red.png'];
+    colorsArr = [colors.darkRed, colors.lightRed, './label-red.png'];
   } else {
-    colors = [darkGreen, lightGreen, './label-green.png'];
+    colorsArr = [colors.darkGreen, colors.lightGreen, './label-green.png'];
   }
 
   return (
     <CircleContainer>
-      <PricetagIcon color={colors[0]}></PricetagIcon>
-      <CircleStyle color={colors[1]}>
-        <CircleMainTextStyle color={colors[0]}>{props.percent}</CircleMainTextStyle>
-        <CircleMinorTextStyle color={colors[0]}> of {props.totalRatings} ratings</CircleMinorTextStyle>
+      <PricetagIcon color={colorsArr[0]}></PricetagIcon>
+      <CircleStyle color={colorsArr[1]}>
+        <CircleMainTextStyle color={colorsArr[0]}>{props.percent}</CircleMainTextStyle>
+        <CircleMinorTextStyle color={colorsArr[0]}> of {props.totalRatings} ratings</CircleMinorTextStyle>
       </CircleStyle>
     </CircleContainer>
   );

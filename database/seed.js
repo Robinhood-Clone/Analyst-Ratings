@@ -195,9 +195,9 @@ const sampleRatings =
 }, {
   "ticker": "FNLC",
   "companyName": "First Bancorp, Inc (ME)",
-  "ratingCountBuys": 5,
-  "ratingCountHolds": 6,
-  "ratingCountSells": 23,
+  "ratingCountBuys": 18,
+  "ratingCountHolds": 4,
+  "ratingCountSells": 0,
   "buySummary": "Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero.",
   "sellSummary": "Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi."
 }, {

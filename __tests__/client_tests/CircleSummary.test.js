@@ -11,12 +11,13 @@ it('displays the circle summary', () => {
   expect(wrapper.exists()).toBe(true);
 });
 
-it('checks the type of value', () => {
-  const props = {
-    percent: '10%'
-  };
-  let CircleSummaryComponent = mount(<CircleSummary {...props} />);
-  expect(CircleSummaryComponent.prop('percent')).toBeString();
+it('renders children when passed in', () => {
+  const wrapper = shallow((
+    <CircleSummary percent={'10%'} totalRatings={10}>
+      <div className="unique" />
+    </CircleSummary>
+  ));
+  expect(wrapper.contains(<div className="unique" />)).to.equal(true);
 });
 
 
