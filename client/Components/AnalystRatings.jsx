@@ -44,15 +44,20 @@ class AnalystRatings extends React.Component {
   }
 
   componentDidMount() {
-    this.getAnalystRatings(this.state.currentStockTicker);
+    let x = location.pathname;
+    let stockTicker = x.substring(8, x.length - 1); // 8 is the length of string '/stocks/'
+    this.getAnalystRatings(stockTicker);
   }
 
   getAnalystRatings(stockTicker, callback) {
     $.ajax({
       method: 'GET',
-      url: `http://localhost:4000/analystRatings/?ticker=${stockTicker}`,
+      url: `http://localhost:4000/api/analystRatings/?ticker=${stockTicker}`,
       success: (data) => {
-        this.setState({ details: data[0] });
+        this.setState({
+          currentStockTicker: stockTicker,
+          details: data[0]
+        });
         console.log('Get request successful: ', data);
         console.log('State after get request: ', this.state);
       }
