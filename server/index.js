@@ -1,9 +1,13 @@
 const express = require('express');
 const app = express();
 const port = 4000;
-const bodyParser = require('body-parser');
-const db = require('../database/index.js')
 
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const db = require('../database/index.js');
+
+app.use(cors());
+app.use('/', express.static('public'));
 app.use('/stocks/:ticker', express.static('public'));
 app.use(bodyParser.urlencoded({extended: false}));
 

@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Stylesvg = styled.svg`
   position: absolute;
-  top: 132px;
-  left: 50px;
+  top: 41px;
+  left: 10px;
   z-index: 1;
 `;
 

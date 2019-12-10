@@ -6,6 +6,7 @@ import colors from './Colors.jsx';
 const CircleContainer = styled.div`
   display: flex;
   width: 128px;
+  position: relative;
 `;
 
 const CircleStyle = styled.div`
