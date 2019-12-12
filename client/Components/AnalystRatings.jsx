@@ -58,8 +58,6 @@ class AnalystRatings extends React.Component {
           currentStockTicker: stockTicker,
           details: data[0]
         });
-        console.log('Get request successful: ', data);
-        console.log('State after get request: ', this.state);
       }
     });
   }
