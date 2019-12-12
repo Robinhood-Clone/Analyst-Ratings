@@ -1,22 +1,138 @@
 import React from 'react';
+import styled from 'styled-components';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import colors from './Colors.jsx';
+
+const Textbox = styled.div`
+  background: rgb(247, 247, 247);
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
+  margin-left: 12px;
+  width: 175px;
+`;
+
+const Title = styled.div`
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+`;
+
+const TextWrapper = styled.div`
+  position: relative;
+`;
+
+const MinimizedText = styled.div`
+  margin: 0px;
+  height: 60px;
+  line-height: 19px;
+  overflow-y: hidden;
+  margin-bottom: 0px;
+  font-family: "DinPro-Light";
+`;
+
+const MaximizedText = styled.div`
+  margin: 0px;
+  min-height: 60px;
+  line-height: 19px;
+  margin-bottom: 0px;
+  font-family: "DinPro-Light";
+`;
+
+const QuoteMark = styled.div`
+  position: absolute;
+  top: 0px;
+  left: -6px;
+  margin: 0px;
+  height: 60px;
+  line-height: 19px;
+  margin-bottom: 0px;
+  font-family: "DinPro-Light";
+`;
+
+const ReadMoreLessButton = styled.div`
+  font-size: 12px;
+  font-weight: 600;
+  color: ${(props) => props.color};
+  margin-top: 5px;
+  margin: 0px;
+  cursor: pointer;
+`;
+
+const DataSourceName = styled.div`
+  font-size: 12px;
+  color: rgb(213, 213, 216);
+  padding-top: 18px;
+  padding-bottom: 18px;
+`;
+
+const TextboxTail = styled.div`
+  width: 0;
+  height: 0;
+  margin-left: 12px;
+  border-style: solid;
+  border-width: 0 15px 20px 24px;
+  border-color: transparent transparent transparent rgb(247, 247, 247);
+`;
 
 class TextSummary extends React.Component {
 
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.state = {
       summaryDisplayed: this.props.summary,
-      buttonDisplayed: 'Read More'
+      readOptionClickText: 'Read More'
     };
+
+    this.onReadClick = this.onReadClick.bind(this);
   }
 
+  onReadClick(event) {
+    if (this.state.readOptionClickText === 'Read More') {
+      this.setState({
+        readOptionClickText: 'Read Less',
+      });
+    } else if (this.state.readOptionClickText === 'Read Less') {
+      this.setState({
+        readOptionClickText: 'Read More',
+      });
+    }
+  }
+
+  renderView() {
+    if (this.state.readOptionClickText === 'Read More') {
+      return (<TextWrapper>
+        <QuoteMark>"</QuoteMark>
+        <MinimizedText>{`${this.props.summary}"`}</MinimizedText>
+      </TextWrapper>);
+    } else if (this.state.readOptionClickText === 'Read Less') {
+      return (<TextWrapper>
+        <QuoteMark>"</QuoteMark>
+        <MaximizedText>{`${this.props.summary}"`}</MaximizedText>
+      </TextWrapper>);
+    }
+  }
 
   render() {
+
+    let color;
+
+    if (this.props.buyPercent.substring(0, this.props.buyPercent.length - 1) < 50) {
+      color = colors.darkRed;
+    } else {
+      color = colors.darkGreen;
+    }
+
     return (
-      <div className="text-summary">
-        <div>{this.props.name}</div>
-        <div>{this.state.summaryDisplayed}</div>
-        <button>{this.state.buttonDisplayed}</button>
+      <div>
+        <Textbox>
+          <Title>{this.props.name}</Title>
+          {this.renderView()}
+          <ReadMoreLessButton onClick={this.onReadClick} color={color}>{this.state.readOptionClickText}</ReadMoreLessButton>
+          <DataSourceName>MorningStar</DataSourceName>
+        </Textbox>
+        <TextboxTail></TextboxTail>
       </div>
     );
   }

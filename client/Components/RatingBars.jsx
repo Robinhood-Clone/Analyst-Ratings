@@ -1,5 +1,6 @@
 import React from 'react';
 import RatingBar from './RatingBar.jsx';
+import styled from 'styled-components';
 
 const RatingBars = (props) => {
 
