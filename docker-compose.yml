@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  analyst-ratings:
+    build: .
+    depends_on:
+      - 'database'
+    ports:
+      - '4000:4000'
+    command: bash -c "./wait-for-it.sh database:3306 && npm run db-setup && npm run start"
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_USER: 'root'
+      MYSQL_PASSWORD: 'plantlife'
+      MYSQL_ROOT_PASSWORD: 'plantlife'
+      MYSQL_DATABASE: 'analystRatings'
+    ports:
+      - '3306:3306'

@@ -3,8 +3,9 @@ const seedData = require('./seed.js');
 
 // Insert your username where it says 'root' and password at 'plantlife'
 const sequelize = new Sequelize('', 'root', 'plantlife', {
-  host: 'localhost',
-  dialect: 'mysql'
+  host: 'database',
+  dialect: 'mysql',
+  port: 3306
 });
 
 sequelize.query('CREATE DATABASE IF NOT EXISTS analystRatings;')
