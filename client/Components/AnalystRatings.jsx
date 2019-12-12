@@ -45,9 +45,7 @@ class AnalystRatings extends React.Component {
 
   componentDidMount() {
     let x = location.pathname;
-    console.log(x);
     let stockTicker = x.substring(8, x.length - 1); // 8 is the length of string '/stocks/'
-    console.log(stockTicker)
     this.getAnalystRatings(stockTicker);
   }
 
