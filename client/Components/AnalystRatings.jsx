@@ -27,7 +27,7 @@ class AnalystRatings extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentStockTicker: 'AHPAW', // AHPAW is green and UVE is red
+      currentStockTicker: 'PSX', // AHPAW is green and UVE is red
       details: {
         id: 0,
         ticker: 'ticker',
@@ -45,7 +45,9 @@ class AnalystRatings extends React.Component {
 
   componentDidMount() {
     let x = location.pathname;
+    console.log(x);
     let stockTicker = x.substring(8, x.length - 1); // 8 is the length of string '/stocks/'
+    console.log(stockTicker)
     this.getAnalystRatings(stockTicker);
   }
 

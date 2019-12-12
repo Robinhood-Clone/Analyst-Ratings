@@ -7,14 +7,12 @@ const sequelize = new Sequelize('', 'root', 'plantlife', {
   dialect: 'mysql'
 });
 
-let Rating = null;
-
 sequelize.query('CREATE DATABASE IF NOT EXISTS analystRatings;')
   .then(() => {
-    return sequelize.query("USE analystRatings;");
+    return sequelize.query('USE analystRatings;');
   })
   .then(() => {
-    return sequelize.query("DROP TABLE IF EXISTS `Rating`;");
+    return sequelize.query('DROP TABLE IF EXISTS `Rating`;');
   })
   .then(() => {
     Rating = sequelize.define('Rating', {
@@ -53,7 +51,8 @@ sequelize.query('CREATE DATABASE IF NOT EXISTS analystRatings;')
   })
   .then(() => {
     Rating.bulkCreate(seedData.sampleRatings);
+  })
+  .then(()=>{
+    return Rating;
   });
 
-
-module.exports.Rating = Rating;

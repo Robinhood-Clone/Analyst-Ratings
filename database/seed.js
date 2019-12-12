@@ -537,264 +537,264 @@ const sampleRatings =
   "buySummary": "Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",
   "sellSummary": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
 }, {
-  "ticker": "OFC^L.CL",
-  "companyName": "Corporate Office Properties Trust",
+  "ticker": "ENPH",
+  "companyName": "Enphase Energy",
   "ratingCountBuys": 25,
   "ratingCountHolds": 6,
   "ratingCountSells": 1,
   "buySummary": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
   "sellSummary": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt."
 }, {
-  "ticker": "AMSF",
-  "companyName": "AMERISAFE, Inc.",
+  "ticker": "GM",
+  "companyName": "GM",
   "ratingCountBuys": 29,
   "ratingCountHolds": 15,
   "ratingCountSells": 10,
   "buySummary": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
   "sellSummary": "Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor."
 }, {
-  "ticker": "PE",
-  "companyName": "Parsley Energy, Inc.",
+  "ticker": "GOOGL",
+  "companyName": "Alphabet",
   "ratingCountBuys": 5,
   "ratingCountHolds": 4,
   "ratingCountSells": 16,
   "buySummary": "Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
   "sellSummary": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus."
 }, {
-  "ticker": "BNFT",
-  "companyName": "Benefitfocus, Inc.",
+  "ticker": "TWLO",
+  "companyName": "Twilio",
   "ratingCountBuys": 7,
   "ratingCountHolds": 4,
   "ratingCountSells": 30,
   "buySummary": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
   "sellSummary": "Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi."
 }, {
-  "ticker": "LJPC",
-  "companyName": "La Jolla Pharmaceutical Company",
+  "ticker": "SHOP",
+  "companyName": "Shopify",
   "ratingCountBuys": 30,
   "ratingCountHolds": 18,
   "ratingCountSells": 28,
   "buySummary": "Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
   "sellSummary": "Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede."
 }, {
-  "ticker": "LUV",
-  "companyName": "Southwest Airlines Company",
+  "ticker": "JD",
+  "companyName": "JD.com",
   "ratingCountBuys": 13,
   "ratingCountHolds": 28,
   "ratingCountSells": 3,
   "buySummary": "Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",
   "sellSummary": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus."
 }, {
-  "ticker": "ANDAU",
-  "companyName": "Andina Acquisition Corp. II",
+  "ticker": "VZ",
+  "companyName": "Verizon",
   "ratingCountBuys": 5,
   "ratingCountHolds": 12,
   "ratingCountSells": 12,
   "buySummary": "Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus.",
   "sellSummary": "Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc."
 }, {
-  "ticker": "ZIV",
-  "companyName": "VelocityShares Daily Inverse VIX Medium-Term ETN",
+  "ticker": "DBX",
+  "companyName": "Dropbox",
   "ratingCountBuys": 17,
   "ratingCountHolds": 30,
   "ratingCountSells": 18,
   "buySummary": "Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.",
   "sellSummary": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum."
 }, {
-  "ticker": "AGNCP",
-  "companyName": "AGNC Investment Corp.",
+  "ticker": "CPRX",
+  "companyName": "Catalyst Pharmaceuticals",
   "ratingCountBuys": 24,
   "ratingCountHolds": 21,
   "ratingCountSells": 22,
   "buySummary": "Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
   "sellSummary": "Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc."
 }, {
-  "ticker": "CPST",
-  "companyName": "Capstone Turbine Corporation",
+  "ticker": "LK",
+  "companyName": "Luckin Coffee",
   "ratingCountBuys": 1,
   "ratingCountHolds": 17,
   "ratingCountSells": 17,
   "buySummary": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.",
   "sellSummary": "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis."
 }, {
-  "ticker": "ALR^B",
-  "companyName": "Alere Inc.",
+  "ticker": "COST",
+  "companyName": "Costco",
   "ratingCountBuys": 6,
   "ratingCountHolds": 11,
   "ratingCountSells": 25,
   "buySummary": "Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.",
   "sellSummary": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi."
 }, {
-  "ticker": "DTE",
-  "companyName": "DTE Energy Company",
+  "ticker": "PINS",
+  "companyName": "Pinterest",
   "ratingCountBuys": 2,
   "ratingCountHolds": 12,
   "ratingCountSells": 9,
   "buySummary": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl.",
   "sellSummary": "Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien."
 }, {
-  "ticker": "CBL^D",
-  "companyName": "CBL & Associates Properties, Inc.",
+  "ticker": "SNE",
+  "companyName": "Sony",
   "ratingCountBuys": 22,
   "ratingCountHolds": 25,
   "ratingCountSells": 15,
   "buySummary": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.",
   "sellSummary": "Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla."
 }, {
-  "ticker": "BSAC",
-  "companyName": "Banco Santander Chile",
+  "ticker": "BILI",
+  "companyName": "Bilibili",
   "ratingCountBuys": 2,
   "ratingCountHolds": 12,
   "ratingCountSells": 26,
   "buySummary": "Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
   "sellSummary": "Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst."
 }, {
-  "ticker": "HUM",
-  "companyName": "Humana Inc.",
+  "ticker": "CARA",
+  "companyName": "Cara Therapeutics",
   "ratingCountBuys": 1,
   "ratingCountHolds": 3,
   "ratingCountSells": 10,
   "buySummary": "Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis.",
   "sellSummary": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
 }, {
-  "ticker": "PCQ",
-  "companyName": "PIMCO California Municipal Income Fund",
+  "ticker": "AKS",
+  "companyName": "AK Steel",
   "ratingCountBuys": 29,
   "ratingCountHolds": 6,
   "ratingCountSells": 6,
   "buySummary": "Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
   "sellSummary": "Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti."
 }, {
-  "ticker": "HOVNP",
-  "companyName": "Hovnanian Enterprises Inc",
+  "ticker": "CRSP",
+  "companyName": "CRISPR",
   "ratingCountBuys": 25,
   "ratingCountHolds": 9,
   "ratingCountSells": 7,
   "buySummary": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl.",
   "sellSummary": "Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo."
 }, {
-  "ticker": "SPNE",
-  "companyName": "SeaSpine Holdings Corporation",
+  "ticker": "ABBV",
+  "companyName": "AbbVie",
   "ratingCountBuys": 20,
   "ratingCountHolds": 14,
   "ratingCountSells": 9,
   "buySummary": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
   "sellSummary": "Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."
 }, {
-  "ticker": "RUSHB",
-  "companyName": "Rush Enterprises, Inc.",
+  "ticker": "CVS",
+  "companyName": "CVS",
   "ratingCountBuys": 7,
   "ratingCountHolds": 8,
   "ratingCountSells": 16,
   "buySummary": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.",
   "sellSummary": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus."
 }, {
-  "ticker": "BSTG",
-  "companyName": "Biostage, Inc.",
+  "ticker": "SPWR",
+  "companyName": "SunPower",
   "ratingCountBuys": 25,
   "ratingCountHolds": 25,
   "ratingCountSells": 13,
   "buySummary": "Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.",
   "sellSummary": "Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim."
 }, {
-  "ticker": "PEI^B",
-  "companyName": "Pennsylvania Real Estate Investment Trust",
+  "ticker": "YETI",
+  "companyName": "YETI",
   "ratingCountBuys": 22,
   "ratingCountHolds": 26,
   "ratingCountSells": 11,
   "buySummary": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
   "sellSummary": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque."
 }, {
-  "ticker": "ARR^B",
-  "companyName": "ARMOUR Residential REIT, Inc.",
+  "ticker": "TGT",
+  "companyName": "Target",
   "ratingCountBuys": 9,
   "ratingCountHolds": 3,
   "ratingCountSells": 29,
   "buySummary": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.",
   "sellSummary": "Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio."
 }, {
-  "ticker": "VIV",
-  "companyName": "Telefonica Brasil S.A.",
+  "ticker": "LLNW",
+  "companyName": "Limelight Networks",
   "ratingCountBuys": 29,
   "ratingCountHolds": 11,
   "ratingCountSells": 17,
   "buySummary": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo.",
   "sellSummary": "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa."
 }, {
-  "ticker": "AHPAW",
-  "companyName": "Avista Healthcare Public Acquisition Corp.",
+  "ticker": "TEVA",
+  "companyName": "Teva Pharmaceutical",
   "ratingCountBuys": 30,
   "ratingCountHolds": 11,
   "ratingCountSells": 15,
   "buySummary": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue.",
   "sellSummary": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim."
 }, {
-  "ticker": "RGLS",
-  "companyName": "Regulus Therapeutics Inc.",
+  "ticker": "MCD",
+  "companyName": "McDonald's",
   "ratingCountBuys": 23,
   "ratingCountHolds": 11,
   "ratingCountSells": 14,
   "buySummary": "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl.",
   "sellSummary": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo."
 }, {
-  "ticker": "AFG",
-  "companyName": "American Financial Group, Inc.",
+  "ticker": "UAA",
+  "companyName": "Under Armour",
   "ratingCountBuys": 7,
   "ratingCountHolds": 18,
   "ratingCountSells": 9,
   "buySummary": "Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.",
   "sellSummary": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem."
 }, {
-  "ticker": "USB^A",
-  "companyName": "U.S. Bancorp",
+  "ticker": "SFIX",
+  "companyName": "Stitch Fix",
   "ratingCountBuys": 2,
   "ratingCountHolds": 12,
   "ratingCountSells": 29,
   "buySummary": "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl.",
   "sellSummary": "Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
 }, {
-  "ticker": "AMT",
-  "companyName": "American Tower Corporation (REIT)",
+  "ticker": "JNJ",
+  "companyName": "Johnson & Johnson",
   "ratingCountBuys": 27,
   "ratingCountHolds": 23,
   "ratingCountSells": 27,
   "buySummary": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat.",
   "sellSummary": "Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus."
 }, {
-  "ticker": "UVE",
-  "companyName": "UNIVERSAL INSURANCE HOLDINGS INC",
+  "ticker": "ZM",
+  "companyName": "Zoom",
   "ratingCountBuys": 5,
   "ratingCountHolds": 9,
   "ratingCountSells": 19,
   "buySummary": "Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
   "sellSummary": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo."
 }, {
-  "ticker": "NADL",
-  "companyName": "North Atlantic Drilling Ltd.",
+  "ticker": "KHC",
+  "companyName": "Kraft Foods",
   "ratingCountBuys": 12,
   "ratingCountHolds": 9,
   "ratingCountSells": 13,
   "buySummary": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
   "sellSummary": "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis."
 }, {
-  "ticker": "FFIN",
-  "companyName": "First Financial Bankshares, Inc.",
+  "ticker": "OMG",
+  "companyName": "OmiseGO",
   "ratingCountBuys": 8,
   "ratingCountHolds": 5,
   "ratingCountSells": 12,
   "buySummary": "Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
   "sellSummary": "Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue."
 }, {
-  "ticker": "ROLL",
-  "companyName": "RBC Bearings Incorporated",
+  "ticker": "DLTR",
+  "companyName": "Dollar Tree",
   "ratingCountBuys": 24,
   "ratingCountHolds": 6,
   "ratingCountSells": 18,
   "buySummary": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi.",
   "sellSummary": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat."
 }, {
-  "ticker": "AHL^B.CL",
-  "companyName": "Aspen Insurance Holdings Limited",
+  "ticker": "PSX",
+  "companyName": "Phillips 66",
   "ratingCountBuys": 15,
   "ratingCountHolds": 21,
   "ratingCountSells": 25,
