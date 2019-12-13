@@ -8,7 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
     "build": "webpack --mode=production --watch",
     "db-setup": "node database/index.js",
     "test": "jest --watchAll --coverage",

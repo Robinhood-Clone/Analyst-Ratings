@@ -10,8 +10,9 @@ const Sequelize = require('sequelize');
 
 // Insert your username where it says 'root' and password at 'plantlife'
 const sequelize = new Sequelize('analystRatings', 'root', 'plantlife', {
-  host: 'localhost',
-  dialect: 'mysql'
+  host: 'database',
+  dialect: 'mysql',
+  port: 3306
 });
 let Rating = sequelize.define('Rating', {
   id: {
@@ -70,6 +71,7 @@ app.get('/api/analystRatings', (req, res) => {
   Rating.sync().then(() => {
     Rating.findAll({ where: { ticker: req.query.ticker } })
       .then((data) => {
+        console.log('data from get request: ', data);
         res.status(200).send(data);
       });
   });
