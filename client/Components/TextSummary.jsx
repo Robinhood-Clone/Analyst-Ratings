@@ -4,7 +4,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import colors from './Colors.jsx';
 
 const Textbox = styled.div`
-  background: rgb(247, 247, 247);
   padding-top: 25px;
   padding-left: 25px;
   padding-right: 25px;
@@ -29,7 +28,6 @@ const MinimizedText = styled.div`
   line-height: 19px;
   overflow-y: hidden;
   margin-bottom: 0px;
-  font-family: "DinPro-Light";
 `;
 
 const MaximizedText = styled.div`
@@ -37,7 +35,6 @@ const MaximizedText = styled.div`
   min-height: 60px;
   line-height: 19px;
   margin-bottom: 0px;
-  font-family: "DinPro-Light";
 `;
 
 const QuoteMark = styled.div`
@@ -48,13 +45,11 @@ const QuoteMark = styled.div`
   height: 60px;
   line-height: 19px;
   margin-bottom: 0px;
-  font-family: "DinPro-Light";
 `;
 
 const ReadMoreLessButton = styled.div`
   font-size: 12px;
   font-weight: 600;
-  color: ${(props) => props.color};
   margin-top: 5px;
   margin: 0px;
   cursor: pointer;
@@ -62,7 +57,6 @@ const ReadMoreLessButton = styled.div`
 
 const DataSourceName = styled.div`
   font-size: 12px;
-  color: rgb(213, 213, 216);
   padding-top: 18px;
   padding-bottom: 18px;
 `;
@@ -73,7 +67,6 @@ const TextboxTail = styled.div`
   margin-left: 12px;
   border-style: solid;
   border-width: 0 15px 20px 24px;
-  border-color: transparent transparent transparent rgb(247, 247, 247);
 `;
 
 class TextSummary extends React.Component {
@@ -116,23 +109,15 @@ class TextSummary extends React.Component {
 
   render() {
 
-    let color;
-
-    if (this.props.buyPercent.substring(0, this.props.buyPercent.length - 1) < 50) {
-      color = colors.darkRed;
-    } else {
-      color = colors.darkGreen;
-    }
-
     return (
       <div>
-        <Textbox>
+        <Textbox className="textboxBackground">
           <Title>{this.props.name}</Title>
           {this.renderView()}
-          <ReadMoreLessButton onClick={this.onReadClick} color={color}>{this.state.readOptionClickText}</ReadMoreLessButton>
-          <DataSourceName>MorningStar</DataSourceName>
+          <ReadMoreLessButton onClick={this.onReadClick} className="darkRedOrGreenGlobalColor">{this.state.readOptionClickText}</ReadMoreLessButton>
+          <DataSourceName className="textDarkGrayGlobalColor">MorningStar</DataSourceName>
         </Textbox>
-        <TextboxTail></TextboxTail>
+        <TextboxTail className="textboxTail"></TextboxTail>
       </div>
     );
   }

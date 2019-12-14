@@ -13,10 +13,8 @@ const BarContainer = styled.div`
 
 const BarSegmentSolid = styled.div`
   display: flex;
-  width: ${(props) => props.barWidth}px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  background-color: ${(props) => props.color};
   height: 6px;
 `;
 
@@ -25,7 +23,6 @@ const BarSegmentGradient = styled.div`
   flex-grow: 1;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  background-image: linear-gradient(.25turn, white, 2%, ${(props) => props.color});
   height: 6px;
 `;
 
@@ -44,23 +41,19 @@ const RatingBar = (props) => {
   let percentNum = props.percent.substring(0, props.percent.length - 1);
   let barWidth = percentNum / 100 * 460;
 
-  let colorsArr;
+  let classNames;
   if (props.name === 'Buy') {
-    if (percentNum < 50) {
-      colorsArr = [colors.darkRed, colors.lightRed];
-    } else {
-      colorsArr = [colors.darkGreen, colors.lightGreen];
-    }
+    classNames = ['darkRedOrGreenGlobalColor', 'lightRedOrGreenGlobalColor'];
   } else {
-    colorsArr = ['black', colors.gray];
+    classNames = ['ratingsBarSolid', 'ratingsBarGradient'];
   }
 
   return (
     <BarContainer>
       <LabelText>{props.name}</LabelText>
-      <BarSegmentSolid barWidth={barWidth} color={colorsArr[0]}></BarSegmentSolid>
+      <BarSegmentSolid width={barWidth} className={classNames[0]}></BarSegmentSolid>
       <PercentText>{props.percent}</PercentText>
-      <BarSegmentGradient color={colorsArr[1]}></BarSegmentGradient>
+      <BarSegmentGradient className={classNames[1]}></BarSegmentGradient>
     </BarContainer>
   );
 

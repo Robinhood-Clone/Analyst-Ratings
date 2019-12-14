@@ -23,7 +23,7 @@ const PricetagIcon = (props) => {
   return (
     <Stylesvg viewBox="0 0 25 25" width="20" height="20">
       <Styleg>
-        <Stylepath color={props.color}></Stylepath>
+        <Stylepath className="darkRedOrGreenGlobalColor"></Stylepath>
       </Styleg>
     </Stylesvg>
 
