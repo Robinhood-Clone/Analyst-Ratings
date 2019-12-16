@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "DINPro";
+  src: url("./DINPro-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro-Light";
+  src: url("./DINPro-Light.ttf") format("truetype");
+}
+
+body {
+  font-family: "DINPro";
+  background-color: white;
+  color: black;
+}
+
+a {
+color: black
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+fill: none;
+stroke: #D4D8DA;
+stroke-width: 2px;
+shape-rendering: crispEdges;
+}
+
+.line {
+fill: none;
+stroke: #6F257F;
+stroke-width: 5px;
+}
+
+.overlay {
+fill: none;
+pointer-events: all;
+}
+
+.focus circle {
+fill: rgb(96, 197, 153);
+stroke: white;
+stroke-width: 1px;
+}
+
+.hover-line {
+stroke: rgb(106, 106, 108);
+stroke-width: 1px;
+}
+
+#graphGroup path {
+  stroke: rgb(96, 197, 153);
+}
+
+#graphGroup path {
+  stroke: rgb(96, 197, 153);
+}
+/* body {
+  font-family: "DINPro-Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 19px;
+  display: block;
+} */
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  line-height: 30px;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  border-bottom: 1px solid #F4F4F5;
+  padding-bottom: 16px;
+}
+.estimatedDotGlobalColor {
+  background: #E6F9F3;
+}
+.actualDotGlobalColor {
+  background: #21CE99;
+}
+/* had made a typo when i originally sent to divy, need to call it only axisGlobalColor */
+.axisGlobalColor {
+  color: rgb(202, 202, 203);
+}
+.lightRedOrGreenGlobalColor {
+  background: #E6F9F3;
+}
+.darkRedOrGreenGlobalColor {
+  color: rgb(96, 197, 153);
+}
+.fillRedOrGreenGlobalColor{
+  background-color: rgb(96, 197, 153);
+  fill: rgb(96, 197, 153);
+}
+.lightBackgroundGrayGlobalColor {
+  color: rgb(244, 244, 245)
+}
+.textDarkGrayGlobalColor {
+  color: rgb(202, 202, 203);
+}
+.ratingsBarSolid {
+  background-color: black;
+}
+.ratingsBarGradient {
+  background-image: linear-gradient(.25turn, white, 2%, rgb(244, 244, 245));
+}
+
+.textboxBackground {
+  background-color: rgb(244, 244, 245);
+}
+.textboxTail {
+  border-color: transparent transparent transparent rgb(244, 244, 245);
+}
