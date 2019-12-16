@@ -23,6 +23,8 @@ const TextWrapper = styled.div`
 `;
 
 const MinimizedText = styled.div`
+  font-family: "DINPro-Light";
+  font-size: 13px;
   margin: 0px;
   height: 60px;
   line-height: 19px;
@@ -31,6 +33,8 @@ const MinimizedText = styled.div`
 `;
 
 const MaximizedText = styled.div`
+  font-family: "DINPro-Light";
+  font-size: 13px;
   margin: 0px;
   min-height: 60px;
   line-height: 19px;
@@ -39,6 +43,7 @@ const MaximizedText = styled.div`
 
 const QuoteMark = styled.div`
   position: absolute;
+  font-size: 13px;
   top: 0px;
   left: -6px;
   margin: 0px;

@@ -15,6 +15,7 @@ const BarSegmentSolid = styled.div`
   display: flex;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  width: ${(props)=> props.width}px;
   height: 6px;
 `;
 
@@ -43,7 +44,7 @@ const RatingBar = (props) => {
 
   let classNames;
   if (props.name === 'Buy') {
-    classNames = ['darkRedOrGreenGlobalColor', 'lightRedOrGreenGlobalColor'];
+    classNames = ['fillRedOrGreenGlobalColor', 'lightRedOrGreenGlobalColor'];
   } else {
     classNames = ['ratingsBarSolid', 'ratingsBarGradient'];
   }
