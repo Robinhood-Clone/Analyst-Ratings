@@ -11,7 +11,6 @@ const CircleContainer = styled.div`
 
 const CircleStyle = styled.div`
   position: relative;
-  background: ${(props) => props.color};
   width: 128px;
   height: 128px;
   border-radius: 64px;
@@ -24,7 +23,6 @@ const CircleMainTextStyle = styled.div`
   width: 90px;
   height: 20px;
   line-height: 0px;
-  color: ${(props) => props.color};
   text-align: center;
   font-size: 21pt;
   font-weight: 600;
@@ -38,7 +36,6 @@ const CircleMinorTextStyle = styled.div`
   height: 40px;
   line-height: 0px;
   font-weight: 600pt;
-  color: ${(props) => props.color};
   text-align: center;
 `;
 
@@ -53,10 +50,10 @@ const CircleSummary = (props) => {
 
   return (
     <CircleContainer>
-      <PricetagIcon color={colorsArr[0]}></PricetagIcon>
-      <CircleStyle color={colorsArr[1]}>
-        <CircleMainTextStyle color={colorsArr[0]}>{props.percent}</CircleMainTextStyle>
-        <CircleMinorTextStyle color={colorsArr[0]}> of {props.totalRatings} ratings</CircleMinorTextStyle>
+      <PricetagIcon className="darkRedOrGreenGlobalColor"></PricetagIcon>
+      <CircleStyle className="lightRedOrGreenGlobalColor">
+        <CircleMainTextStyle className="darkRedOrGreenGlobalColor">{props.percent}</CircleMainTextStyle>
+        <CircleMinorTextStyle className="darkRedOrGreenGlobalColor"> of {props.totalRatings} ratings</CircleMinorTextStyle>
       </CircleStyle>
     </CircleContainer>
   );

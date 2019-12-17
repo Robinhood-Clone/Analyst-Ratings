@@ -4,7 +4,6 @@ import Header from './Header.jsx';
 import CircleSummary from './CircleSummary.jsx';
 import RatingBars from './RatingBars.jsx';
 import TextSummaries from './TextSummaries.jsx';
-import GlobalStyle from './GlobalStyle.jsx';
 import styled from 'styled-components';
 
 const OuterContainer = styled.div`
@@ -27,16 +26,16 @@ class AnalystRatings extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentStockTicker: 'PSX', // AHPAW is green and UVE is red
+      currentStockTicker: 'MMM', // AHPAW is green and UVE is red
       details: {
         id: 0,
-        ticker: 'ticker',
-        companyName: 'name here',
-        ratingCountBuys: 0,
-        ratingCountHolds: 0,
-        ratingCountSells: 0,
-        sellSummary: 'sell because...',
-        buySummary: 'buy because...',
+        ticker: 'MMM',
+        companyName: '3M',
+        ratingCountBuys: 29,
+        ratingCountHolds: 25,
+        ratingCountSells: 26,
+        sellSummary: 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.',
+        buySummary: 'In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
       },
     };
 
@@ -44,15 +43,21 @@ class AnalystRatings extends React.Component {
   }
 
   componentDidMount() {
-    let x = location.pathname;
-    let stockTicker = x.substring(8, x.length - 1); // 8 is the length of string '/stocks/'
-    this.getAnalystRatings(stockTicker);
+    let path = location.pathname;
+    let stockSymbol = path.substring(0, path.length - 1);
+    if (stockSymbol === '' || stockSymbol === undefined) {
+      stockSymbol = 'MMM';
+    } else {
+      stockSymbol = path.substring(8, path.length - 1);
+    }
+
+    this.getAnalystRatings(stockSymbol);
   }
 
   getAnalystRatings(stockTicker, callback) {
     $.ajax({
       method: 'GET',
-      url: `http://localhost:4000/api/analystRatings/?ticker=${stockTicker}`,
+      url: `http://3.136.112.156/api/analystRatings/?ticker=${stockTicker}`,
       success: (data) => {
         this.setState({
           currentStockTicker: stockTicker,
@@ -77,7 +82,6 @@ class AnalystRatings extends React.Component {
 
     return (
       <div>
-        <GlobalStyle></GlobalStyle>
         <Header></Header>
         <OuterContainer>
           <InnerContainer>
